@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="icon" href="../src/icons/main_icon.png" />
+    <title>AuThOrIzKeY - Регистрация</title>
+  </head>
+  <body>
+    <main class="main">
+      <img
+        class="logo"
+        src="../src/pictures/logo.png"
+        width="250"
+        height="85"
+      />
+      <form action="../php/reg.php" method="post" class="form_log_in">
+        <h1 class="form_name">Регистрация</h1>
+        <label class="login"
+          ><input
+            name="login"
+            type="text"
+            placeholder="Придумайте логин"
+            minlength="5"
+            required
+        /></label>
+        <label class="password"
+          ><input
+            name="password"
+            type="password"
+            placeholder="Придумайте пароль"
+            minlength="8"
+            required
+        /></label>
+        <label class="password"
+          ><input
+            name="description"
+            type="text"
+            placeholder="Придумайте описание"
+            maxlength="32"
+            required
+        /></label>
+        <label>
+          <select name="gender" class="user_gender">
+            <option value="1">Мужской</option>
+            <option value="2">Женский</option>
+          </select>
+        </label>
+        <nav class="log_in_nav">
+          <a class="reg_info" href="../pages/log_in.html"
+            >Уже зарегистрированы?</a
+          >
+          <button>Создать</button>
+        </nav>
+      </form>
+    </main>
+  </body>
+</html>

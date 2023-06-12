@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/account.css" />
+    <link rel="icon" href="../src/icons/main_icon.png" />
+    <title>AuThOrIzKeY - Авторизация</title>
+  </head>
+  <body>
+    <main class="main">
+      <img
+        class="logo"
+        src="../src/pictures/logo.png"
+        width="250"
+        height="85"
+      />
+      <form action="../php/log_in.php" method="post" class="form_log_in">
+        <h1 class="form_name">Авторизация</h1>
+        <label class="login"
+          ><input
+            name="login"
+            type="text"
+            placeholder="Введите ваш логин"
+            minlength="5"
+            required
+        /></label>
+        <label class="password"
+          ><input
+            name="password"
+            type="password"
+            placeholder="Введите ваш пароль"
+            minlength="8"
+            required
+        /></label>
+        <nav class="log_in_nav">
+          <a class="reg_info" href="../pages/reg.html"
+            >Ещё не зарегистрированы?</a
+          >
+          <button>Войти</button>
+        </nav>
+      </form>
+    </main>
+  </body>
+</html>
