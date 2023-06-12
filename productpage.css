@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-image: url("../src/pictures/background.svg");
+  background-attachment: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 0px 0px 30px 30px;
+}
+
+.header_nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 189px;
+  height: 65px;
+  background: url("../src/pictures/logo.png") no-repeat center / 189px;
+}
+
+.header_list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-left: auto;
+}
+
+.header_item {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #000000;
+}
+
+.main {
+  min-height: 680px;
+  height: auto;
+  margin: 125px 100px;
+  font-size: 22px;
+  color: #000000;
+}
+
+.add_chapter {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #000000;
+  margin-left: auto;
+  border: solid 3px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.chapter {
+  margin-top: 25px;
+}
+
+.chapter_name {
+  font-size: 22px;
+}
+
+.chapter_nav {
+  display: flex;
+  align-items: center;
+}
+
+.topic_title {
+  color: #2bd945;
+}
+
+.topic_name,
+.topic_title {
+  font-size: 18px;
+}
+
+.topic_author {
+  margin-top: 35px;
+}
+
+.topic_text,
+.topic_author,
+.topic_time {
+  font-size: 16px;
+}
+
+.nav_icon {
+  margin-left: 10px;
+}
+
+.main_aside {
+  padding: 20px 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  min-width: 20%;
+}
+
+.aside_info {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  border-bottom: solid 3px;
+  border-color: rgb(255, 255, 255);
+}
+
+.aside_title {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.top_info {
+  padding: 15px 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.topic_list {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.topic_nav,
+.answer_nav {
+  display: flex;
+  align-items: center;
+}
+
+.add_answer {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  color: #2bd945;
+}
+
+.answer_icon {
+  margin-left: 10px;
+}
+
+.answer_info {
+  margin-top: 15px;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.answer_icon_author {
+  margin-right: 10px;
+}
+
+.answer_author {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.answer_time,
+.answer_text {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 75px;
+  background-color: #ffffff;
+}
+
+.copyright {
+  margin-right: 10px;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
+
+.product_box{
+  display: flex;
+  background-color: white;
+  color: #000000;
+  width: 100%;
+  min-height: 700px;
+  border: solid 3px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 40px;
+}
+
+.product_text{
+  width: fit-content;
+}
+
+.product_img{
+  margin-left: auto;
+  width: 800px;
+}
+
+.product_price{
+  font-size: 36px;
+  margin-top: 40px;
+}
+
+.product_img img{
+  width: 100%;
+}
+
+.list_btn{
+  display: grid;
+  padding: 14px 22px;
+}
+
+.like_btn{
+  background-color: #008CBA;
+  color: white;
+  font-size: 22px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  margin-top: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.basket_btn{
+  background-color: #4CAF50;
+  color: white;
+  font-size: 22px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  margin-top: 14px;
+  text-align: center;
+  text-decoration: none;
+  transition: .3s all;
+  cursor: pointer;
+}
+
+.basket_btn:hover{
+
+}
+
+.none{
+  display: none;
+}
